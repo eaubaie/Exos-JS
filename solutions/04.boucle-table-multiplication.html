@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>04 Table de multiplication</title>
+</head>
+<body>
+        
+        <h1>04 Table de multiplication</h1>
+        <h3>Table de multiplication</h3>
+        
+        <script>
+                
+                const NBR_ELEMENTS_TABLE = 10;
+                let nombre = null;
+                let resultat = null;
+                
+                nombre = prompt("Quel table de multiplication voulez-vous afficher ?");
+                
+                // Si nombre n'est pas vide et n'est pas égal à null
+                if (nombre != undefined && nombre != null) {
+                        // On convertit nombre en nombre entier
+                        nombre = parseInt(nombre);
+                } else {
+                        nombre = 0;
+                }
+
+                // Affichage du nombre choisi par l'utilisateur et de la table de multiplication
+                document.write(`<p>Table de multiplication du nombre : <strong> ${nombre} </strong></p>`);
+
+                for(let i = 1; i <= NBR_ELEMENTS_TABLE; i++) {
+                        resultat = nombre * i;
+                        document.write(`${nombre} x ${i} = ${resultat} <br>`); // Avec un template literals (ES6)               
+                }
+
+               
+        </script>
+</body>
+</html>
+
+
