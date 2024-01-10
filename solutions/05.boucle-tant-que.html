@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>05 Boucle tant que...</title>
+</head>
+<body>
+        
+        <h1>05 Tant que tu ne me dis pas Bonjour !</h1>
+        <h3>Je ne te dirais pas qui je suis :)</h3>
+        <hr>
+
+        <script>
+                
+                let phrase = null;
+                let reponse = null;
+                
+                // Afficher le message de bienvenue de l'inconnu
+                document.write(`<h3>Inconnu : Bonjour !</h3>`);
+
+                // Demander à l'utilisateur de dire quelque chose
+                phrase = prompt("Inconnu : Dis-moi quelque chose !");
+                
+                // Si la phrase n'est pas vide et n'est pas égale à null
+                if (phrase != undefined && phrase != null) 
+                {
+                        // Tant que la phrase n'est pas égale à Bonjour ET bonjour ET BONJOUR on redemande à l'utilisateur de dire quelque chose
+                        while(phrase != "Bonjour" && phrase != "bonjour" && phrase != "BONJOUR") {
+                                phrase = prompt("Inconnu : Ce n'est pas ce que j'attends ! Dis-moi quelque chose d'autre !");
+                        } 
+                        
+                        // L'utilisateur a bien dit bonjour, alors on lui dit qui l'on est dans la variable réponse
+                        reponse = "Zelda : Je suis contente que tu m'aie dis bonjour !<br> Moi je suis Zelda !";
+
+                        
+                }else{
+                        // Si la phrase est vide ou égale à null ou que l'utilisateur a cliqué sur Annuler
+                        reponse = "Inconnu : Tu es un grand timide :)";
+                }
+
+                // Afficher la réponse
+                document.write(`<h3>${reponse}</h3>`);
+               
+        </script>
+</body>
+</html>
+
+

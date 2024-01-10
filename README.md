@@ -2,4 +2,5 @@
 
  Javascript exercises for young programmers
 
- Updated : 10.01.2024 16:00
+ Version : 1.2.0   
+ Updated : 10.01.2024 17:00
