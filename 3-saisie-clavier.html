@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Saisie au clavier</h1>
+    <h2>Elevation à la puissance de 2.</h2>
+
+    <script>
+        const PUISSANCE = 2;
+        let nombre = null;
+        let resultat = null;
+
+        nombre = prompt("Quel est le nombre à élever au carré ?");
+
+        if(nombre != undefined && nombre != null){
+            nombre = parseInt(nombre);
+        }
+        else{
+            nombre = 0;
+        }
+
+        resultat = nombre ** PUISSANCE;
+
+        document.write(nombre + " élevé à la puissance " + PUISSANCE + " est égal à " + resultat)
+    </script>
+</body>
+</html>
